@@ -15,6 +15,6 @@ jangan lupa tambahkan hasil screenshoot web di dalam file
 
 ### Tambahkan identitas dasar di sini: 
 
-Nama  :
+Nama  : Olivia Marlinang Elizabeth Christine Lumbantobing
 <br>
-NIM   :
+NIM   : 119140159
