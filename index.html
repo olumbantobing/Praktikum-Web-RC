@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tugas Praktikum 6</title>
+</head>
+
+<body>
+    <div id="head">
+        <table>
+            <tr>
+                <td><img src="fruit.png" alt="fruits"></td>
+                <td><h1>Toko Buah Institut Teknologi Sumatera</h1></td>
+            </tr>
+        </table>
+    </div>
+
+    <form action="beli.php" method="POST">
+        <fieldset>
+            <legend>DAFTAR BELANJA</legend>
+            <table>
+                <tr>
+                    <td>Mangga (Rp 15000/kg)*</td>
+                    <td><input type="number" id="mangga" name="mangga" onchange="setValue()" placeholder="Masukkan berat"> kg</td>
+                </tr>
+                <tr>
+                    <td>Jambu (Rp 13000/kg)*</td>
+                    <td><input type="number" id="jambu" name="jambu" onchange="setValue()" placeholder="Masukkan berat"> kg</td>
+                </tr>
+                <tr>
+                    <td>Salak (Rp 10000/kg)*</td>
+                    <td><input type="number" id="salak" name="salak" onchange="setValue()" placeholder="Masukkan berat"> kg</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td><input type="number" id="total" name="total" readonly</td>
+                </tr>
+            </table>
+            <br>
+            <button type="submit">Beli</button>
+            <p style="font-size: smaller;">* Masukkan angka 0 jika tidak membeli</p>
+        </fieldset>
+    </form>
+    
+    <script>
+        function setValue(){
+            var total = document.getElementById("total");
+            var mangga = document.getElementById("mangga").value * 15000;
+            var jambu = document.getElementById("jambu").value * 13000;
+            var salak = document.getElementById("salak").value * 10000;
+            console.log(mangga + jambu + salak);
+            var hasil = mangga + jambu + salak;
+            total.value = hasil;
+        }
+    </script>
+</body>
+</html>
