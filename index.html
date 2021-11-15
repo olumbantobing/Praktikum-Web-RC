@@ -23,15 +23,15 @@
             <legend>DAFTAR BELANJA</legend>
             <table>
                 <tr>
-                    <td>Mangga (Rp 15000/kg)*</td>
+                    <td>Mangga (Rp 15000/kg)* </td>
                     <td><input type="number" id="mangga" name="mangga" onchange="setValue()" placeholder="Masukkan berat"> kg</td>
                 </tr>
                 <tr>
-                    <td>Jambu (Rp 13000/kg)*</td>
+                    <td>Jambu (Rp 13000/kg)* </td>
                     <td><input type="number" id="jambu" name="jambu" onchange="setValue()" placeholder="Masukkan berat"> kg</td>
                 </tr>
                 <tr>
-                    <td>Salak (Rp 10000/kg)*</td>
+                    <td>Salak (Rp 10000/kg)* </td>
                     <td><input type="number" id="salak" name="salak" onchange="setValue()" placeholder="Masukkan berat"> kg</td>
                 </tr>
                 <tr>
@@ -51,7 +51,6 @@
             var mangga = document.getElementById("mangga").value * 15000;
             var jambu = document.getElementById("jambu").value * 13000;
             var salak = document.getElementById("salak").value * 10000;
-            console.log(mangga + jambu + salak);
             var hasil = mangga + jambu + salak;
             total.value = hasil;
         }
